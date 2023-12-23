@@ -206,4 +206,9 @@ footer .section-container .footer-column .social-heading {
   align-items: center;
 }
 
+footer .myntra-copyright {
+  text-align: center;
+  padding-top: 50px;
+}
+
 /* ---------FOOTER END---------*/
