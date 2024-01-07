@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  height: 6vh;
+  background-color: #161617CC;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-list .nav-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.hero-section, .main-first-section, .main-second-section {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.hero-section .text-container {
+  position: absolute;
+  top: 6rem;
+}
+
+.hero-section .text-part, .main-second-section .text-part {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-part .brand-name {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.text-part .tagline {
+  font-size: 1.5em;
+  margin-top: 7px;
+}
+
+.hero-section .links, .main-first-section .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 13px;
+}
+
+.hero-section .links a, .main-first-section .links a {
+  color: #2997FF;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.main-first-section {
+  background-color: #fff;
+  width: 100%;
+}
+
+.main-first-section .text-part {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.main-first-section .text-container {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+}
+
+.main-second-section {
+  height: 90vh;
+}
+
+.main-second-section .text-container {
+  position: absolute;
+  bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-second-section .links button {
+  padding: 0.5rem 1.1rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}
+
+.main-second-section .links button a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.main-third-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.main-third-section div {
+  position: relative;
+}
+
+.main-third-section div img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  height: 80vh;
+  background-color: gray;
+}
+
+/*--------- SWIPER --------*/
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+/*--------- SWIPER --------*/
