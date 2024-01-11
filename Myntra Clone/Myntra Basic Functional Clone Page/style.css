@@ -1,0 +1,261 @@
+/* ---------UNIVERSAL SELECTORS---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+/* -------------------------------------*/
+
+/* ---------HEADER START---------*/
+
+header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.myntra-logo {
+  height: 36px;
+  width: 53px;
+}
+
+.logo-container {
+  margin-left: 4%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 500px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 28px 0;
+  border-bottom: 5px solid #ffffff;
+  color: #696b79;
+}
+
+.nav-bar a sup {
+  color: red;
+}
+
+.nav-bar a:hover {
+  border-bottom: 5px solid red;
+}
+
+.action-bar {
+  margin-right: 4%;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 194px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  min-width: 200px;
+  width: 30%;
+}
+
+.search-input {
+  flex-grow: 1;
+  height: 40px;
+  border: none;
+  background-color: #f5f5f6;
+  color: #696e79;
+  border-radius: 0 10px 10px 0;
+}
+
+.search-icon {
+  height: 20px;
+  padding: 10px;
+  box-sizing: content-box;
+  background-color: #f5f5f6;
+  border-radius: 5px 0 0 5px;
+}
+
+.bag-item-count {
+  background-color: rgb(234, 66, 66);
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  border-radius: 50%;
+  position: relative;
+  color: #fff;
+  left: -15px;
+  top: -13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.action-container {
+  text-decoration: none;
+}
+
+a.action-container:link {
+  color: black;
+}
+
+/* ---------HEADER END---------*/
+
+/* ---------MAIN START---------*/
+
+main {
+  position: relative;
+}
+
+main .items-container {
+  width: 80%;
+  margin: 0px 10%;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item-container {
+  /* background-color: #696e79; */
+  width: 250px;
+}
+
+.rating, .company-name {
+  font-weight: 700;
+}
+
+.item-name {
+  padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-container img {
+  width: 100%;
+}
+
+.btn-add-bag {
+  width: 100%;
+  padding: 7px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.price .current-price {
+  font-weight: 700;
+}
+
+.price .original-price {
+  text-decoration: line-through;
+  color: #282c3f;
+}
+
+.price .discount {
+  color: #ff905a;
+  font-weight: 700;
+  font-size: 12px;
+}
+/* ---------MAIN END---------*/
+
+/* ---------FOOTER START---------*/
+
+footer {
+  padding: 30px 100px;
+  background-color: #fafbfc;
+}
+
+footer .footer-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 25px 0;
+  color: #282c3f;
+}
+
+footer .section-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .section-container .heading-list a {
+  display: flex;
+  flex-direction: column;
+  color: #696b79;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer .section-container .quality-mark {
+  height: 48px;
+}
+
+.section-container .playstore .quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .section-container .footer-column .playstore img {
+  height: 42px;
+  margin-right: 10px;
+}
+
+footer .section-container .footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .section-container .footer-column .quality-container {
+  display: flex;
+  padding: 25px 0;
+}
+
+footer .section-container .footer-column .quality-container .quality-mark {
+  padding-right: 10px;
+}
+
+footer .section-container .footer-column .socials .social-icons > img {
+  height: 20px;
+  padding-right: 10px;
+}
+
+footer .section-container .footer-column .social-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.footer-column .return-delivery img {
+  height: 49px;
+  padding-right: 10px;
+}
+
+.footer-column .return-guarantee {
+  display: flex;
+  align-items: center;
+}
+
+footer .myntra-copyright {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* ---------FOOTER END---------*/
