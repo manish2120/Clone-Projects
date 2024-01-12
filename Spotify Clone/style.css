@@ -1,0 +1,94 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --background-base: #000;
+  --background-highlight: #1A1A1A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+  background-color: var(--background-base);
+  font-family: sans-serif;
+}
+
+.left {
+  width: 25vw;
+}
+
+.right {
+  width: 75vw;
+  border: 1px solid red;
+  margin-left: 0.5rem;
+}
+
+.container {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.first-card, .second-card {
+  background-color: var(--background-highlight);
+  padding-top: 1.5rem;
+  padding-inline: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.second-card {
+  margin: 0.5rem 0;
+}
+
+.second-card h2 {
+  color: #A7A7A7;
+}
+
+.home, .search {
+  display: flex;
+  width: 24px;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.home a, .search a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.left img {
+  filter: invert(1);
+}
+
+.footer {
+  display: flex;
+  font-size: 10px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* RIGHT PART */
+.nav {
+  background-color: var(--background-highlight);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav .btns button {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 20px;
+}
