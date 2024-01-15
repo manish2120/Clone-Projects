@@ -208,6 +208,21 @@ body {
 
 .songsList ul {
   list-style-type: decimal;
+  margin: 1rem;
+}
+
+.songsList ul li .play-song {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 15px 0;
+}
+
+.songsList ul li .play-song .info {
+  width: 100%;
+  padding-left: 12px;
 }
 
 .seekbar {
@@ -226,3 +241,5 @@ body {
   position: relative;
   bottom: 3.5px;
 }
+
+
