@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,6 +31,11 @@
         <div class="library">
           <!-- <img src="assets/library.svg" alt=""> -->
           <h2>Your Library</h2>
+          <div class="songsList">
+            <ul>
+
+            </ul>
+          </div>
         </div>
 
         <div class="footer">
@@ -45,7 +51,7 @@
               data-encore-id="textLink"><span data-encore-id="type">About Ads</span></a></div>
           <div><a href="https://www.spotify.com/in-en/accessibility/" id="" class="" data-encore-id="textLink"><span
                 data-encore-id="type">Accessibility</span></a></div>
-      </div>
+        </div>
       </div>
 
 
@@ -61,16 +67,63 @@
           <img src="assets/forward.svg" alt="">
         </div>
         <div class="btns">
-          <button>Sign up</button>
+          <button class="signupBtn">Sign up</button>
           <button>Log in</button>
         </div>
       </div>
 
+      <div class="spotifyPlaylists">
+        <div class="playlistsHeading">
+          <h2>Spotify Playlists</h2>
+          <a href="#">Show all</a>
+        </div>
+      </div>
 
+      <div class="songsPlaylist">
+        <div class="card-container">
+          <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+          <div class="play">
+            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 iYxpxA">
+              <path
+                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                xmlns="http://www.w3.org/2000/svg"></path>
+            </svg>
+          </div>
+          <div class="song">
+            <h4 class="songs-title">lofi beats</h4>
+            <p class="songs-desc">chill beats, lofi vibes, new tracks every week...</p>
+          </div>
+        </div>
 
+        <div class="card-container">
+          <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+          <div class="play">
+
+          </div>
+          <div class="song">
+            <h4 class="songs-title">lofi beats</h4>
+            <p class="songs-desc">chill beats, lofi vibes, new tracks every week...</p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+          <div class="song">
+            <h4 class="songs-title">lofi beats</h4>
+            <p class="songs-desc">chill beats, lofi vibes, new tracks every week...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="currentSong">
+        <div class="backstep"><i class="fa-solid fa-backward-step"></i></div>
+        <div class="play-song"><i class="fa-regular fa-circle-play"></i></div>
+        <div class="forward-step"><i class="fa-solid fa-forward-step"></i></div>
+      </div>
     </div>
 
   </div>
 </body>
+<script src="script.js"></script>
 
 </html>

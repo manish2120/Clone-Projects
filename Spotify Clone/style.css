@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
   --background-base: #000;
@@ -23,7 +23,6 @@ body {
 
 .right {
   width: 75vw;
-  border: 1px solid red;
   margin-left: 0.5rem;
 }
 
@@ -91,4 +90,119 @@ body {
   padding: 0.7rem 2rem;
   border: none;
   border-radius: 20px;
+  font-weight: 700;
+}
+
+.nav .btns .signupBtn {
+  background-color: transparent;
+  color: #A7A7A7;
+}
+
+.spotifyPlaylists {
+  padding: 1rem;
+}
+
+.songsPlaylist {
+ display: flex;
+ position: relative;
+}
+
+.playlistsHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: red;
+  color: #fff;
+}
+
+.playlistsHeading a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #A7A7A7;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 177px;
+  border: blue;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.card-container img{
+  width: 100%;
+  object-fit: contain; /*image pe hee object fit lagana hoga*/
+  border-radius: 0.7rem;
+}
+
+.songsPlaylist .card-container .song h4 {
+  padding: 6px 0;
+  color: #fff;
+}
+
+.card-container .song .songs-desc {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: #A7A7A7;
+}
+
+.card-container:hover {
+  background-color: #1A1A1A;
+  transition: 0.2s all ease-in;
+}
+
+.card-container:hover .play {
+  opacity: 1;
+  right: 20px;
+  top: 110px;
+  transition: 0.2s all ease-in;
+}
+
+.play {
+  background-color: #1ED760;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set a fixed width for the div, adjust as needed */
+  height: 40px; /* Set a fixed height for the div, adjust as needed */
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  opacity: 0;
+}
+
+.play svg {
+  width: 100%; /* Adjust the size of the SVG as needed */
+  height: auto;
+}
+
+.currentSong {
+  background-color: #1ED760;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentSong i {
+  padding: 0 1rem;
+}
+
+.songsList {
+  color: #fff;
+}
+
+.songsList ul {
+  list-style-type: decimal;
 }
