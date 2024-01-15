@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 :root {
   --background-base: #000;
-  --background-highlight: #1A1A1A;
+  --background-highlight: #1a1a1a;
 }
 
 * {
@@ -31,7 +31,8 @@ body {
   padding: 0.5rem;
 }
 
-.first-card, .second-card {
+.first-card,
+.second-card {
   background-color: var(--background-highlight);
   padding-top: 1.5rem;
   padding-inline: 1.5rem;
@@ -45,17 +46,19 @@ body {
 }
 
 .second-card h2 {
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
-.home, .search {
+.home,
+.search {
   display: flex;
   width: 24px;
   align-items: center;
   padding: 1rem 0;
 }
 
-.home a, .search a {
+.home a,
+.search a {
   padding: 0 1rem;
   text-decoration: none;
   color: #fff;
@@ -95,7 +98,7 @@ body {
 
 .nav .btns .signupBtn {
   background-color: transparent;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .spotifyPlaylists {
@@ -103,8 +106,8 @@ body {
 }
 
 .songsPlaylist {
- display: flex;
- position: relative;
+  display: flex;
+  position: relative;
 }
 
 .playlistsHeading {
@@ -120,7 +123,7 @@ body {
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .card-container {
@@ -135,7 +138,7 @@ body {
   position: relative;
 }
 
-.card-container img{
+.card-container img {
   width: 100%;
   object-fit: contain; /*image pe hee object fit lagana hoga*/
   border-radius: 0.7rem;
@@ -149,11 +152,11 @@ body {
 .card-container .song .songs-desc {
   font-size: 0.775rem;
   font-weight: 500;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .card-container:hover {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   transition: 0.2s all ease-in;
 }
 
@@ -165,7 +168,7 @@ body {
 }
 
 .play {
-  background-color: #1ED760;
+  background-color: #1ed760;
   border-radius: 50%;
   padding: 0.7rem;
   display: flex;
@@ -185,7 +188,7 @@ body {
 }
 
 .currentSong {
-  background-color: #1ED760;
+  background-color: #1ed760;
   width: 74%;
   height: 40px;
   position: absolute;
