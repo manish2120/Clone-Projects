@@ -32,30 +32,28 @@ async function main() {
     songsUL.innerHTML =
       songsUL.innerHTML +
       `<li>
-      <div class="play-song">
       <i class="fa-solid fa-music"></i>
       <div class="info">
-      ${song.replaceAll("%20", " ")}
+      <div>${song.replaceAll("%20", " ")}</div>
+      <div>manish</div>
       </div>
       <i class="fa-regular fa-circle-play"></i>
-      </div>
       </li>`;
   }
 
   // let audio = new Audio(songs[0]);
-  // audio.play();
+  // audio.play();s
 
   // audio.addEventListener("loadeddata", () => {
   //   console.log(audio.duration, audio.currentSrc, audio.currentTime);
   // });
 }
 
-Array.from(document.querySelector('.songsList').getElementsByTagName('li')).forEach(e => {
-  e.addEventListener('click', element => {
+Array.from(document.querySelector('.songsList').getElementsByTagName('ul')).forEach(e => {
+  e.addEventListener('click', (element) => {
     console.log(e.querySelector('.info').firstElementChild.innerHTML);
-  
     playMusic(e.querySelector('.info').firstElementChild.innerHTML.trim());
-  })
-})
+  });
+});
 
 main();
